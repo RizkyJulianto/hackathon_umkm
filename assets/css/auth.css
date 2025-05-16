@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #16c47f;
+  --secondary: #66f1c2;
+}
+
+body {
+  background: #fbfbfb;
+}
+
+.circle-blur-first {
+  position: absolute;
+  bottom: -50%;
+  right: 2%;
+  width: 400px;
+  border-radius: 100%;
+  height: 400px;
+  filter: blur(80px);
+  background: var(--primary);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.circle-blur-second {
+  position: absolute;
+  top: -17%;
+  left: -4%;
+  width: 350px;
+  border-radius: 100%;
+  height: 350px;
+  filter: blur(80px);
+  background: var(--secondary);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.row-sign-in,
+.row-sign-up {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.row-sign-in .right-col,
+.row-sign-up .right-col {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+}
+
+.row-sign-in .right-col h2,
+.row-sign-up .right-col h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.row-sign-in .left-col,
+.row-sign-up .left-col {
+  position: relative;
+  flex: 1 1 50%;
+  padding: 5%;
+}
+
+.header-auth {
+  margin-bottom: 1.5rem;
+}
+
+.header-auth h2 span {
+  color: var(--primary);
+}
+
+.header-auth p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+  width: 100%;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  color: #666;
+}
+
+.form-group input {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1.5px solid #bbb;
+  outline: none;
+}
+
+.form-group input:focus {
+  border: 1.5px solid var(--primary);
+}
+
+.btn-sign {
+  width: 100%;
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-sign:hover {
+  opacity: 0.9;
+}
+
+.account-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.account-link a {
+  color: var(--primary);
+}

@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  padding: 0 8%;
+}
+
+:root {
+  --primary: #16c47f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: 0 1px 2px #f1f1f1;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.navbar .logo a span {
+  color: var(--primary);
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar .nav-menu .nav-list {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.navbar .nav-menu .nav-list:hover {
+  color: var(--primary);
+}
+
+.navbar .nav-menu .nav-list::before {
+  content: "";
+  width: 0;
+  left: 0;
+  transition: 300ms linear;
+  position: absolute;
+  height: 2.5px;
+  background: var(--primary);
+  bottom: -3px;
+  transform: -50% -50%;
+}
+
+.navbar .nav-menu .nav-list:hover::before {
+  width: 50%;
+}
+
+.navbar .nav-menu .nav-list::after {
+  content: "";
+  width: 0;
+  transition: 300ms linear;
+  position: absolute;
+  height: 2.5px;
+  right: 0;
+  background: var(--primary);
+  bottom: -3px;
+  transform: -50% -50%;
+}
+
+.navbar .nav-menu .nav-list:hover::after {
+  width: 50%;
+}
+
+.hero {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle-blur-1 {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  width: 200px;
+  border-radius: 100%;
+  height: 200px;
+  filter: blur(70px);
+  background: rgb(22, 196, 127);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.circle-blur-2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 350px;
+  border-radius: 100%;
+  height: 350px;
+  filter: blur(120px);
+  background: rgb(22, 196, 127);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.circle-blur-3 {
+  position: absolute;
+  bottom: 1%;
+  right: 4%;
+  width: 250px;
+  border-radius: 100%;
+  height: 250px;
+  filter: blur(90px);
+  background: rgb(22, 196, 127);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.hero .content {
+  max-width: 100%;
+  width: 60%;
+  margin: auto;
+}
+
+.hero .content .badge {
+  background: var(--primary);
+  padding: 0.4rem 1.4rem;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.1rem;
+}
+
+.hero .content h1 {
+  font-size: 2.35rem;
+  margin: 0.9rem 0;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.08rem;
+  text-align: justify;
+}
+
+.hero .content .searching {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.hero .content .searching input {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  padding: 0 0.5rem;
+  outline: none;
+  font-size: 1.03rem;
+}
+
+.hero .content .searching button {
+  padding: 0.5rem 1rem;
+  text-wrap: nowrap;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1.03rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}

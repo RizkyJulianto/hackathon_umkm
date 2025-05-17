@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar-nav">
+    <nav class="navbar-nav" id="navbar-nav">
         <div class="logo">
             <a href="">Micro<span>UMKM</span>.</a>
         </div>
@@ -30,7 +30,7 @@
         <div class="circle-blur-3"></div>
         <main class="content">
             <span class="badge">
-                <p>Micro UKM</p>
+                <p>Micro UMKM</p>
             </span>
             <h1>Smart Catalog <span>UMKM</span>: Berbasis QR Code</h1>
             <p>Selamat datang di platform inovatif yang menghadirkan kemudahan dalam mengakses informasi produk UMKM
@@ -68,7 +68,45 @@
         <div class="header">
             <h1></h1>
         </div>
+        <div class="row-about">
+            <div class="right-about">
+                <img src="./assets/images/umkm-trade.png" alt="">
+            </div>
+            <div class="left-about">
+                <span class="badge">
+                    <i class="fas fa-earth-asia"></i> Tentang MicroUMKM.
+                </span>
+                <h2>Mendukung Perkembangan <span>UMKM</span> Lokal Lewat Inovasi, Kreativitas, dan Semangat
+                    Kewirausahaan
+                    Berkelanjutan</h2>
+                <p>Kami berkomitmen untuk membantu <span>UMKM</span> tumbuh melalui produk berkualitas, pemasaran
+                    digital, dan
+                    pelatihan berkelanjutan. Dengan memberdayakan pelaku usaha lokal, kami turut mendorong perekonomian
+                    daerah serta menciptakan lapangan kerja yang bermanfaat bagi masyarakat secara luas dan
+                    berkelanjutan.</p>
+                <div class="count-about">
+                    <div class="col-count-about">
+                        <h3>65.2 M</h3>
+                        <span>Pedagang UMKM</span>
+                    </div>
+                    <div class="col-count-about">
+                        <h3>300 M - 2.5 B</h3>
+                        <span>Rata-Rata Hasil Tahunan UMKM</span>
+                    </div>
+                    <div class="col-count-about">
+                        <h3>10%</h3>
+                        <span>Pertumbuhan Tahunan UMKM</span>
+                    </div>
+                    <div class="col-count-about">
+                        <h3>9580 T</h3>
+                        <span>Kontribusi UMKM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

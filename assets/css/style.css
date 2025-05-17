@@ -18,7 +18,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem 8%;
+  padding: 1.5rem 8%;
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: 0 1px 2px #f5f5f5;
+  z-index: 100;
+}
+
+.sticky-navbar {
+  background: #fefefe;
   border-bottom: 1px solid #f1f1f1;
   box-shadow: 0 1px 2px #f1f1f1;
 }
@@ -69,7 +76,7 @@
   left: 0;
   transition: 300ms linear;
   position: absolute;
-  height: 2.5px;
+  height: 2.2px;
   background: var(--primary);
   bottom: -3px;
   transform: -50% -50%;
@@ -84,7 +91,7 @@
   width: 0;
   transition: 300ms linear;
   position: absolute;
-  height: 2.5px;
+  height: 2.2px;
   right: 0;
   background: var(--primary);
   bottom: -3px;
@@ -99,7 +106,7 @@
 
 .hero {
   width: 100%;
-  height: 80dvh;
+  height: 76dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,7 +196,7 @@
   display: flex;
   gap: 0.5rem;
   padding: 0.35rem;
-  border: 2px solid #ccc;
+  border: 2px solid #e1e1e1;
   border-radius: 5px;
 }
 
@@ -218,9 +225,9 @@
   cursor: pointer;
 }
 
-/* partner */
+/* partner section */
 .partner {
-  padding: 2rem 8%;
+  padding: 5rem 8%;
   background: #fefefe;
 }
 
@@ -233,4 +240,81 @@
 
 .partner .row-partner .col-partner img {
   width: 100%;
+}
+
+/* about section */
+.about {
+  padding: 3rem 8% 5rem;
+}
+
+.about .row-about {
+  display: flex;
+  gap: 4rem;
+}
+
+.about .row-about .right-about {
+  flex: 1 1 50%;
+}
+
+.about .row-about .right-about img {
+  width: 100%;
+}
+
+.about .row-about .left-about {
+  flex: 1 1 50%;
+  text-align: justify;
+}
+
+.about .row-about .left-about .badge {
+  background: var(--primary);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.about .row-about .left-about h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about .row-about .left-about h2 span {
+  color: var(--primary);
+}
+
+.about .row-about .left-about p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4rem;
+}
+
+.about .row-about .left-about p span {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.about .row-about .left-about .count-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.about .row-about .left-about .count-about .col-count-about {
+  padding: 0.8rem 1rem;
+  border: 2px solid #eee;
+  border-radius: 5px;
+}
+
+.about .row-about .left-about .count-about .col-count-about h3 {
+  color: var(--primary);
+  font-size: 1.05rem;
+}
+
+.about .row-about .left-about .count-about .col-count-about span {
+  font-size: 0.8rem;
+  color: #6f6f6f;
 }

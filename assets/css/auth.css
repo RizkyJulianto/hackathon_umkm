@@ -75,7 +75,12 @@ body {
 }
 
 .header-auth {
+  line-height: 1.2rem;
   margin-bottom: 1.5rem;
+}
+
+.header-auth h2 {
+  margin-bottom: 0.7rem;
 }
 
 .header-auth h2 span {
@@ -88,6 +93,7 @@ body {
 }
 
 .form-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.1rem;
@@ -106,6 +112,7 @@ body {
   border-radius: 6px;
   border: 1.5px solid #bbb;
   outline: none;
+  position: relative;
 }
 
 .form-group input:focus {
@@ -137,5 +144,17 @@ body {
 }
 
 .account-link a {
+  color: var(--primary);
+}
+
+.eye-icon {
+  position: absolute;
+  top: 68%;
+  transform: translateY(-50%);
+  right: 20px;
+  cursor: pointer;
+}
+
+.eye-icon i:hover {
   color: var(--primary);
 }

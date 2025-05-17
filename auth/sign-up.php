@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/auth.css">
     <link rel="stylesheet" href="../assets/css/font.css">
+
 </head>
 
 <body>
@@ -41,14 +45,17 @@
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input required autocomplete="off" type="text" name="password" id="password"
+                    <input required autocomplete="off" type="password" name="password" id="password_field"
                         placeholder="Enter your password">
+                    <span class="eye-icon"><i class="fas fa-eye-slash"></i></span>
                 </div>
                 <button class="btn-sign">Sign In</button>
             </form>
             <p class="account-link">Your have already account? <a href="./sign-in.php">Sign In</a> now!</p>
         </div>
     </section>
+
+    <script src="../assets/js/auth.js"></script>
 </body>
 
 </html>

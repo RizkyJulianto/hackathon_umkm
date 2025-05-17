@@ -6,55 +6,64 @@
   text-decoration: none;
 }
 
-body {
-  padding: 0 8%;
-}
-
 :root {
   --primary: #16c47f;
 }
 
-.navbar {
+.navbar-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.8rem 8%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   border-bottom: 1px solid #f1f1f1;
   box-shadow: 0 1px 2px #f1f1f1;
 }
 
-.navbar .logo a {
+.navbar-nav .logo a {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
 }
 
-.navbar .logo a span {
+.navbar-nav .logo a span {
   color: var(--primary);
 }
 
-.navbar .nav-menu {
+.navbar-nav .nav-menu {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
 
-.navbar .nav-menu .nav-list {
+.navbar-nav .nav-menu .nav-list {
   color: #000;
   font-weight: 400;
-  font-size: 1.1rem;
   position: relative;
 }
 
-.navbar .nav-menu .nav-list:hover {
+.navbar-nav .nav-menu .nav-btn {
+  display: inline-block;
+  background: var(--primary);
+  padding: 0.7rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  font-size: 0.99rem;
+}
+
+.navbar-nav .nav-menu .nav-btn:hover {
+  opacity: 0.9;
+}
+
+.navbar-nav .nav-menu .nav-list:hover {
   color: var(--primary);
 }
 
-.navbar .nav-menu .nav-list::before {
+.navbar-nav .nav-menu .nav-list::before {
   content: "";
   width: 0;
   left: 0;
@@ -66,11 +75,11 @@ body {
   transform: -50% -50%;
 }
 
-.navbar .nav-menu .nav-list:hover::before {
+.navbar-nav .nav-menu .nav-list:hover::before {
   width: 50%;
 }
 
-.navbar .nav-menu .nav-list::after {
+.navbar-nav .nav-menu .nav-list::after {
   content: "";
   width: 0;
   transition: 300ms linear;
@@ -82,15 +91,16 @@ body {
   transform: -50% -50%;
 }
 
-.navbar .nav-menu .nav-list:hover::after {
+.navbar-nav .nav-menu .nav-list:hover::after {
   width: 50%;
 }
 
+/* hero section */
+
 .hero {
   width: 100%;
-  height: 100dvh;
+  height: 80dvh;
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -137,16 +147,21 @@ body {
 
 .hero .content {
   max-width: 100%;
-  width: 60%;
+  width: 55%;
   margin: auto;
 }
 
 .hero .content .badge {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .content .badge p {
   background: var(--primary);
-  padding: 0.4rem 1.4rem;
+  padding: 0.2rem 1rem;
   color: #fff;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   font-weight: 600;
   display: inline-block;
@@ -154,7 +169,7 @@ body {
 }
 
 .hero .content h1 {
-  font-size: 2.35rem;
+  font-size: 2.26rem;
   margin: 0.9rem 0;
 }
 
@@ -163,8 +178,9 @@ body {
 }
 
 .hero .content p {
-  font-size: 1.08rem;
   text-align: justify;
+  font-size: 1.024rem;
+  line-height: 1.7rem;
 }
 
 .hero .content .searching {
@@ -173,7 +189,7 @@ body {
   display: flex;
   gap: 0.5rem;
   padding: 0.35rem;
-  border: 1px solid #aaa;
+  border: 2px solid #ccc;
   border-radius: 5px;
 }
 
@@ -181,9 +197,12 @@ body {
   width: 100%;
   display: inline-block;
   border: none;
-  padding: 0 0.5rem;
+  padding: 0.8rem 1rem;
   outline: none;
-  font-size: 1.03rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  letter-spacing: 0.7px;
+  border: 2px solid #e1e1e1;
 }
 
 .hero .content .searching button {
@@ -191,8 +210,27 @@ body {
   text-wrap: nowrap;
   background: var(--primary);
   color: #fff;
-  font-size: 1.03rem;
+  font-size: 0.9rem;
+  font-weight: 500;
   border: none;
   outline: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+/* partner */
+.partner {
+  padding: 2rem 8%;
+  background: #fefefe;
+}
+
+.partner .row-partner {
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.partner .row-partner .col-partner img {
+  width: 100%;
 }

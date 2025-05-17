@@ -63,6 +63,12 @@
             </div>
         </div>
     </section>
+
+    <section class="about">
+        <div class="header">
+            <h1></h1>
+        </div>
+    </section>
 </body>
 
 </html>

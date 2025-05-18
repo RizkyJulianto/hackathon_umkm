@@ -106,6 +106,45 @@
         </div>
     </section>
 
+
+    <section class="superiority" id="superiority">
+        <div class="header">
+            <h2>Keunggulan <span class="color-span-umkm">UMKM</span> (Usaha Mikro, Kecil, dan Menengah)</h2>
+            <p><span class="color-span-umkm">UMKM</span> adalah penggerak ekonomi rakyat yang berperan penting dalam
+                menciptakan peluang usaha lokal</p>
+        </div>
+        <div class="row-superiority">
+            <div class="col-superiority">
+                <div class="icon">
+                    <i class="fas fa-people-group"></i>
+                </div>
+                <h4>Membuka Lapangan Kerja Baru</h4>
+                <p><span class="color-span-umkm">UMKM</span> menciptakan banyak peluang kerja bagi masyarakat sekitar,
+                    terutama di daerah, sehingga
+                    mengurangi tingkat pengangguran dan meningkatkan kesejahteraan lokal</p>
+            </div>
+            <div class="col-superiority">
+                <div class="icon">
+                    <i class="fas fa-money-bill-trend-up"></i>
+
+                </div>
+                <h4>Perekonomian Menjadi Merata</h4>
+                <p>Dengan tersebarnya <span class="color-span-umkm">UMKM</span> di berbagai daerah, pertumbuhan ekonomi
+                    tidak hanya terpusat di kota besar,
+                    tetapi juga merata hingga ke pelosok</p>
+            </div>
+            <div class="col-superiority">
+                <div class="icon">
+                    <i class="fa-solid fa-people-arrows"></i>
+                </div>
+                <h4>Memenuhi Kebutuhan Masyarakat</h4>
+                <p><span class="color-span-umkm">UMKM</span> mampu menyediakan berbagai produk dan layanan yang
+                    dibutuhkan masyarakat, seringkali dengan
+                    harga lebih terjangkau dan kualitas yang tetap bersaing</p>
+            </div>
+        </div>
+    </section>
+
     <script src="./assets/js/main.js"></script>
 </body>
 

@@ -17,10 +17,14 @@
         <div class="logo">
             <a href="">Micro<span>UMKM</span>.</a>
         </div>
-        <div class="nav-menu">
+        <div class="nav-menu" id="nav-menu">
+            <i class="fas fa-x" id="times-nav" onclick="hideNav()"></i>
             <a href="" class="nav-list">Home</a>
             <a href="" class="nav-list">Daftar Produk</a>
             <a href="./auth/sign-in.php" class="nav-btn">Get Started</a>
+        </div>
+        <div class="nav-extra">
+            <i class="fas fa-bars" id="hamburger" onclick="showNav()"></i>
         </div>
     </nav>
 
@@ -188,7 +192,25 @@
     </footer>
 
     <script src="./assets/js/main.js"></script>
+    <script>
+    const navbarNav = document.getElementById("nav-menu");
 
+    function showNav() {
+        navbarNav.style.right = "0";
+    }
+
+    function hideNav() {
+        navbarNav.style.right = "-75%";
+    }
+
+    const navBar = document.getElementById('navbar-nav');
+    const hamburger = document.getElementById('hamburger');
+    document.addEventListener('click', function(e) {
+        if (!navBar.contains(e.target) && !hamburger.contains(e.target)) {
+            navbarNav.style.right = '-75%'
+        }
+    })
+    </script>
 </body>
 
 </html>

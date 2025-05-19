@@ -419,7 +419,6 @@
 }
 
 /* footer */
-
 .footer {
   padding: 3.5rem 8% 0;
   box-shadow: 0 1px 2px #f1f1f1;
@@ -494,13 +493,13 @@
 .row-footer .col-footer-email .form-group input {
   width: 100%;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 0.6rem;
   outline: none;
   border: 1px solid #bbb;
 }
 
 .row-footer .col-footer-email .form-group button {
-  padding: 0.5rem 0.7rem;
+  padding: 0.6rem 0.9rem;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
@@ -520,5 +519,114 @@
 
 .footer .copyright p {
   text-align: center;
-  font-size: 0.85rem;
+}
+
+.nav-extra {
+  display: none;
+}
+
+#times-nav {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-nav .nav-menu {
+    position: fixed;
+    top: 6rem;
+    right: -75%;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 70%;
+    background: #fbfbfb;
+    box-shadow: 1px 2px 6px #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 100;
+    transition: 300ms ease-in;
+  }
+
+  #times-nav {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: 1px solid #cfcfcf;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    color: #666;
+  }
+
+  .nav-extra {
+    display: inline-block;
+  }
+
+  .hero {
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .hero .content {
+    width: 100%;
+    padding: 0 8%;
+  }
+
+  .hero .content .badge p {
+    padding: 0.1rem 1rem;
+    font-size: 0.65rem;
+  }
+
+  .hero .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero .content p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .hero .content .searching {
+    display: flex;
+  }
+
+  .hero .content .searching input {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .hero .content .searching button {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .partner .row-partner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about .row-about {
+    flex-wrap: wrap;
+  }
+
+  .about .row-about .right-about {
+    flex: 1 1 100%;
+  }
+
+  .about .row-about .left-about {
+    flex: 1 1 100%;
+  }
+
+  .superiority .row-superiority {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .row-footer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer .copyright p {
+    font-size: 0.73rem;
+  }
 }

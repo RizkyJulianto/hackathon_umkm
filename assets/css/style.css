@@ -346,7 +346,7 @@
 .superiority .row-superiority {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  gap: 1.5rem;
 }
 
 .superiority .row-superiority .col-superiority {
@@ -416,4 +416,109 @@
   text-align: justify;
   font-size: 0.9rem;
   line-height: 1.3rem;
+}
+
+/* footer */
+
+.footer {
+  padding: 3.5rem 8% 0;
+  box-shadow: 0 1px 2px #f1f1f1;
+  border-top: 1.3px solid #f0f0f0;
+}
+
+.row-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 3.5rem;
+  gap: 3rem;
+}
+
+.row-footer h4 {
+  margin-bottom: 0.6rem;
+}
+
+.row-footer p,
+.row-footer a {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.row-footer .col-footer-brands p {
+  margin-top: 0.6rem;
+  line-height: 1.3rem;
+  text-align: justify;
+}
+
+.row-footer .col-footer-permalinks .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.row-footer .col-footer-permalinks .links a {
+  transition: 200ms ease-in-out;
+}
+
+.row-footer .col-footer-permalinks .links a:hover {
+  color: var(--primary);
+  transform: translateX(3px);
+  transition: 200ms ease-in-out;
+}
+
+.row-footer .col-footer-sosmed .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.row-footer .col-footer-sosmed .links a {
+  transition: 200ms ease-in-out;
+}
+
+.row-footer .col-footer-sosmed .links a:hover {
+  color: var(--primary);
+  transform: translateX(3px);
+  transition: 200ms ease-in-out;
+}
+
+.row-footer .col-footer-email p {
+  margin-bottom: 0.6rem;
+  line-height: 1.3rem;
+}
+
+.row-footer .col-footer-email .form-group {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.row-footer .col-footer-email .form-group input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #bbb;
+}
+
+.row-footer .col-footer-email .form-group button {
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+}
+
+.row-footer .col-footer-email .form-group button i {
+  transform: rotate(45deg);
+}
+
+.footer .copyright {
+  padding: 1.5rem 0;
+  border-top: 2px solid #f1f1f1;
+}
+
+.footer .copyright p {
+  text-align: center;
+  font-size: 0.85rem;
 }

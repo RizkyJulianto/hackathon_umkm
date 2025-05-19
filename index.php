@@ -145,7 +145,50 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="row-footer">
+            <div class="col-footer-brands">
+                <h3>Micro<span class="color-span-umkm">UMKM</span>.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae odit ipsa nemo voluptatibus
+                    necessitatibus porro.</p>
+            </div>
+            <div class="col-footer-permalinks">
+                <h4>Permalinks</h4>
+                <div class="links">
+                    <a href="">Home</a>
+                    <a href="">Daftar Produk</a>
+                    <a href="">Get Started</a>
+                </div>
+            </div>
+            <div class="col-footer-sosmed">
+                <h4>Social Media</h4>
+                <div class="links">
+                    <a href=""><i class="fab fa-instagram"></i> microumkm_</a>
+                    <a href=""><i class="fab fa-facebook"></i> microumkm_</a>
+                    <a href=""><i class="fab fa-tiktok"></i> microumkm_</a>
+                    <a href=""><i class="fab fa-twitter"></i> microumkm_</a>
+                </div>
+            </div>
+            <div class="col-footer-email">
+                <h4>Subscribe Newsletter</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <div class="form-group">
+                    <input type="text" placeholder="Masukan email anda">
+                    <button><i class="fas fa-arrow-up"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year_copyright">
+                    <script>
+                    document.getElementById("year_copyright").innerHTML = new Date().getFullYear();
+                    </script>
+                </span> Copyright All Reversed | Micro<span class="color-span-umkm">UMKM</span>.</p>
+        </div>
+    </footer>
+
     <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>

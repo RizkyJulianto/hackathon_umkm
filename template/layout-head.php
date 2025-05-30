@@ -2,8 +2,8 @@
 include "../connection/config.php";
 session_start();
 
-if ($_SESSION['signIn'] != 1) {
-    header("Location: ../auth/sign-in.php");
+if (!isset($_SESSION['id_users'])) {
+    header("Location: ../login.php");
 }
 
 ?>
@@ -48,10 +48,10 @@ if ($_SESSION['signIn'] != 1) {
                         class="nav-menu p-3 rounded mb-3 hover:bg-primary hover:text-white">
                         <span><i class="fas fa-people-arrows"></i> Testimoni</span>
                     </a>
-                    <span class="text-sm text-gray-400 mb-2 inline-block">Aktivitas</span>
-                    <a href="" class="nav-menu p-3 rounded mb-3 hover:bg-primary hover:text-white">
-                        <span href="../admin/aktivitas.php"><i class="fa-solid fa-clock-rotate-left"></i>
-                            Aktivitas</span>
+                    <span class="text-sm text-gray-400 mb-2 inline-block">Activity</span>
+                    <a href="../admin/histori.php" class="nav-menu p-3 rounded mb-3 hover:bg-primary hover:text-white">
+                        <span><i class="fa-solid fa-clock-rotate-left"></i>
+                            Histori</span>
                     </a>
 
                     <a href="../auth/sign-out.php" class="nav-menu p-3 rounded mb-3 hover:bg-primary hover:text-white">

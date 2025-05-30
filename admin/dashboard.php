@@ -1,5 +1,5 @@
 <?php
-$title_web = "Dashboard | Nasi Kebuli AJB";
+$title_web = "Dashboard - Nasi Kebuli AJB";
 include "../template/layout-head.php" ?>
 
 <section class="dashboard w-full ml-[300px] pt-[85px] bg-[#f7f7f7] min-h-screen overflow-y-auto">

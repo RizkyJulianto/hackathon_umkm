@@ -1,215 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackathon | Smart Catalog UMKM</title>
+    <title>Nasi Kebuli AJB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/font.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Fonty -->
+    <link rel="stylesheet" href="libs/font/font.css" />
+    <link rel="stylesheet" href="assets/css/tailwindcss/output.css" />
 </head>
 
-<body>
-    <nav class="navbar-nav" id="navbar-nav">
-        <div class="logo">
-            <a href="">Micro<span>UMKM</span>.</a>
-        </div>
-        <div class="nav-menu" id="nav-menu">
-            <i class="fas fa-x" id="times-nav" onclick="hideNav()"></i>
-            <a href="" class="nav-list">Home</a>
-            <a href="" class="nav-list">Daftar Produk</a>
-            <a href="./auth/sign-in.php" class="nav-btn">Get Started</a>
-        </div>
-        <div class="nav-extra">
-            <i class="fas fa-bars" id="hamburger" onclick="showNav()"></i>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="circle-blur-1"></div>
-        <div class="circle-blur-2"></div>
-        <div class="circle-blur-3"></div>
-        <main class="content">
-            <span class="badge">
-                <p>Micro UMKM</p>
-            </span>
-            <h1>Smart Catalog <span>UMKM</span>: Berbasis QR Code</h1>
-            <p>Selamat datang di platform inovatif yang menghadirkan kemudahan dalam mengakses informasi produk UMKM
-                secara cepat dan praktis. Dengan memanfaatkan teknologi QR Code, promosi usaha menjadi lebih efisien,
-                modern, dan menjangkau lebih banyak pelanggan.
-            </p>
-            <div class="searching">
-                <input placeholder="Mencari produk" type="text">
-                <button>Cari Produk</button>
-            </div>
-        </main>
-    </section>
-
-    <section class="partner">
-        <div class="row-partner">
-            <div class="col-partner">
-                <img src="./assets/images/partner/logo_umkm_kementerian.svg" alt="">
-            </div>
-            <div class="col-partner">
-                <img src="./assets/images/partner/logo_bumn.png" alt="">
-            </div>
-            <div class="col-partner">
-                <img src="./assets/images/partner/logo_bri.png" alt="">
-            </div>
-            <div class="col-partner">
-                <img src="./assets/images/partner/logo_kemenkop.png" alt="">
-            </div>
-            <div class="col-partner">
-                <img src="./assets/images/partner/logo_kementerian_perdagangan.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="header">
-            <h1></h1>
-        </div>
-        <div class="row-about">
-            <div class="right-about">
-                <img src="./assets/images/umkm-trade.png" alt="">
-            </div>
-            <div class="left-about">
-                <span class="badge">
-                    <i class="fas fa-earth-asia"></i> Tentang MicroUMKM.
-                </span>
-                <h2>Mendukung Perkembangan <span>UMKM</span> Lokal Lewat Inovasi, Kreativitas, dan Semangat
-                    Kewirausahaan
-                    Berkelanjutan</h2>
-                <p>Kami berkomitmen untuk membantu <span>UMKM</span> tumbuh melalui produk berkualitas, pemasaran
-                    digital, dan
-                    pelatihan berkelanjutan. Dengan memberdayakan pelaku usaha lokal, kami turut mendorong perekonomian
-                    daerah serta menciptakan lapangan kerja yang bermanfaat bagi masyarakat secara luas dan
-                    berkelanjutan.</p>
-                <div class="count-about">
-                    <div class="col-count-about">
-                        <h3>65.2 M</h3>
-                        <span>Pedagang UMKM</span>
-                    </div>
-                    <div class="col-count-about">
-                        <h3>300 M - 2.5 B</h3>
-                        <span>Rata-Rata Hasil Tahunan UMKM</span>
-                    </div>
-                    <div class="col-count-about">
-                        <h3>10%</h3>
-                        <span>Pertumbuhan Tahunan UMKM</span>
-                    </div>
-                    <div class="col-count-about">
-                        <h3>9580 T</h3>
-                        <span>Kontribusi UMKM</span>
-                    </div>
+<body class="font-fira">
+    <!-- Header Section -->
+    <header class="header relative " id="beranda">
+        <nav class="bg-transparant py-5 md:px-8 lg:px-14 min-[420px]:px-4 ">
+            <div class="flex flex-wrap justify-between items-center mx-auto  py-4 px-6  lg:px-4 fixed top-0 w-full  left-0   z-50" id="navbar">
+                <div class="logo flex items-center">
+                    <img src="assets/images/logo.png" alt="" class="w-16  h-16 object-contain">
+                    <a href="#" class="flex items-center space-x-3  lg:text-2xl md:text-2xl text-2xl font-bold whitespace-nowrap text-black/70">
+                        Kebuli<span class="text-primary">  Ajb</span>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="superiority" id="superiority">
-        <div class="header">
-            <h2>Keunggulan <span class="color-span-umkm">UMKM</span> (Usaha Mikro, Kecil, dan Menengah)</h2>
-            <p><span class="color-span-umkm">UMKM</span> adalah penggerak ekonomi rakyat yang berperan penting dalam
-                menciptakan peluang usaha lokal</p>
-        </div>
-        <div class="row-superiority">
-            <div class="col-superiority">
-                <div class="icon">
-                    <i class="fas fa-people-group"></i>
+                <div class=" md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col  mt-4 md:mt-0 rounded-lg  absolute lg:static lg:flex-row  max-sm:left-5 md:left-8  -top-96 lg:top-0 lg:left-0 max-lg:bg-secondary max-lg:border-gray-100  lg:border-0 w-[92%]  transition-all duration-500" id="navigation">
+                        <li>
+                            <a href="#beranda" class="block py-5 lg:py-0 lg:px-2 px-5  lg:text-base  border-b border-gray-100 lg:border-0 min-[420px]:text-white md:text-white lg:text-black/70 hover:text-primary transition-all duration-300 max-lg:text-xl" aria-current="page">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#tentang" class="block py-5 lg:py-0 lg:px-2 px-5  lg:text-base  border-b border-gray-100 lg:border-0 min-[420px]:text-white md:text-white lg:text-black/70 hover:text-primary transition-all duration-300 max-lg:text-xl">Tentang</a>
+                        </li>
+                        <li>
+                            <a href="#produk" class="block py-5 lg:py-0 lg:px-2 px-5  lg:text-base  border-b border-gray-100 lg:border-0 min-[420px]:text-white md:text-white lg:text-black/70  hover:text-primary transition-all duration-300 max-lg:text-xl">Produk</a>
+                        </li>
+                        <li>
+                            <a href="#testimoni" class="block py-5 lg:py-0 lg:px-2 px-5  lg:text-base  border-b border-gray-100 lg:border-0 min-[420px]:text-white md:text-white lg:text-black/70 hover:text-primary transition-all duration-300 max-lg:text-xl">Testimoni</a>
+                        </li>
+                    </ul>
                 </div>
-                <h4>Membuka Lapangan Kerja Baru</h4>
-                <p><span class="color-span-umkm">UMKM</span> menciptakan banyak peluang kerja bagi masyarakat sekitar,
-                    terutama di daerah, sehingga
-                    mengurangi tingkat pengangguran dan meningkatkan kesejahteraan lokal</p>
-            </div>
-            <div class="col-superiority">
-                <div class="icon">
-                    <i class="fas fa-money-bill-trend-up"></i>
+                <div class="button-hamburger relative flex items-center lg:hidden ml-2">
+                    <button id="hamburger" name="hamburger" type="button" class="block">
+                        <span class="hamburger-bar bg-primary block w-[30px] h-[2px] my-2 rounded-md origin-top-left transition-all duration-500"></span>
+                        <span class="hamburger-bar bg-primary block w-[30px] h-[2px] my-2 ml-2 rounded-md transition-all duration-500"></span>
+                        <span class="hamburger-bar bg-primary block w-[30px] h-[2px] my-2 rounded-md origin-bottom-left transition-all duration-500"></span>
+                    </button>
 
                 </div>
-                <h4>Perekonomian Menjadi Merata</h4>
-                <p>Dengan tersebarnya <span class="color-span-umkm">UMKM</span> di berbagai daerah, pertumbuhan ekonomi
-                    tidak hanya terpusat di kota besar,
-                    tetapi juga merata hingga ke pelosok</p>
-            </div>
-            <div class="col-superiority">
-                <div class="icon">
-                    <i class="fa-solid fa-people-arrows"></i>
-                </div>
-                <h4>Memenuhi Kebutuhan Masyarakat</h4>
-                <p><span class="color-span-umkm">UMKM</span> mampu menyediakan berbagai produk dan layanan yang
-                    dibutuhkan masyarakat, seringkali dengan
-                    harga lebih terjangkau dan kualitas yang tetap bersaing</p>
-            </div>
-        </div>
-    </section>
+        </nav>
 
-    <footer class="footer">
-        <div class="row-footer">
-            <div class="col-footer-brands">
-                <h3>Micro<span class="color-span-umkm">UMKM</span>.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae odit ipsa nemo voluptatibus
-                    necessitatibus porro.</p>
+    </header>
+
+
+    <!-- Header Section End -->
+
+    <!-- Beranda Section -->
+    <div class="beranda h-screen">
+        <!-- Backround -->
+        <img src="assets/images/ruko/ruko-3.jpg" alt="" class="absolute -z-10 top-0 w-screen h-screen object-cover">
+        <div class="background-overlay bg-white/80 w-full h-screen absolute top-0 -z-9 "></div>
+        <div class="beranda-section-box-text text-center lg:mt-36 mt-24 ">
+            <div class="beranda-section-text-title ">
+                <h2 class="font-bold text-secondary max-lg:text-3xl max-md:text-2xl lg:text-[43px]">
+                    Nasi Kebuli <span class="text-primary">Ajibarang</span> <br>
+                    Dari Dapur ke Kampus - <span class="text-primary">Rasanya</span> ga main main!
+                </h2>
             </div>
-            <div class="col-footer-permalinks">
-                <h4>Permalinks</h4>
-                <div class="links">
-                    <a href="">Home</a>
-                    <a href="">Daftar Produk</a>
-                    <a href="">Get Started</a>
-                </div>
+            <div class="beranda-section-text-subtitle mt-4">
+                <p class="lg:text-base  text-secondary md:text-base text-sm font-[400] text-center lg:max-w-[720px] md:max-w-[630px] max-w-[370px] mx-auto">
+                    Nasi Kebuli Ajibarang menyajikan berbagai hidangan lezat seperti ayam geprek, ayam telur, dan menu harian lainnya. Dimasak dengan bumbu pilihan dan rasa yang pas di lidah, cocok untuk kamu yang cari makan enak, praktis, dan terjangkau di sekitar UMP.
+                </p>
             </div>
-            <div class="col-footer-sosmed">
-                <h4>Social Media</h4>
-                <div class="links">
-                    <a href=""><i class="fab fa-instagram"></i> microumkm_</a>
-                    <a href=""><i class="fab fa-facebook"></i> microumkm_</a>
-                    <a href=""><i class="fab fa-tiktok"></i> microumkm_</a>
-                    <a href=""><i class="fab fa-twitter"></i> microumkm_</a>
-                </div>
-            </div>
-            <div class="col-footer-email">
-                <h4>Subscribe Newsletter</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                <div class="form-group">
-                    <input type="text" placeholder="Masukan email anda">
-                    <button><i class="fas fa-arrow-up"></i></button>
-                </div>
+            <div class="beranda-section-cta mt-6">
+                <a href="#produk" class="bg-primary hover:bg-amber-500 transition-all duration-500 text-white py-3 px-6 inline-block  md:w-[240px] rounded-[10px] font-medium md:text-lg text-base">Lihat Produk</a>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; <span id="year_copyright">
-                    <script>
-                    document.getElementById("year_copyright").innerHTML = new Date().getFullYear();
-                    </script>
-                </span> Copyright All Reversed | Micro<span class="color-span-umkm">UMKM</span>.</p>
+
+        <!-- Gradient -->
+        <div class="absolute h-20 bg-linear-to-t from-white to-white/5  w-full bottom-0 -z-10"></div>
+    </div>
+
+    <!-- Beranda Section End -->
+
+    <!-- Tentang Section -->
+    <div class="tentang mt-12 lg:mt-0 px-30 relative scroll-mt-28 " id="tentang">
+        <div class="tentang-container-content  flex flex-col-reverse lg:flex-row justify-between items-center">
+            <div class="tentang-left-col mt-4 w-[350px] md:w-auto md:max-w-[500px]">
+                <div class="judul">
+                    <h2 class="text-xl lg:text-[28px] md:text-4xl font-bold text-secondary">Sejarah Nasi Kebuli<span class="text-primary"> Ajibarang </span></h2>
+                </div>
+                <div class="deskripsi mt-4 text-justify">
+                    <p>Nasi Kebuli AJB, singkatan dari Ajibarang, dirintis sebagai usaha rumahan saat pandemi. Berawal dari dapur keluarga, penjualan dilakukan lewat sistem pre-order dan online.Berfokus pada usaha kuliner yang menyajikan cita rasa dengan sentuhan lokal.Kebuli AJB hadir untuk memanjakan lidah pecinta kuliner Ajibarang dan sekitarnya.Saat ini Kebuli AJB resmi hadir di lingkungan UMP. Respon pasar sangat baik, terutama dari mahasiswa. Mulai rutin melayani pesanan event dan konsumsi harian.</p>
+                </div>
+            </div>
+            <div class="tentang-right-col max-lg:relative w-full lg:w-auto  h-[350px] md:h-[500px] lg:h-[400px]">
+                <img src="assets/images/produk/kebuli ayam katsu harga 12.000.jpg" alt="" class="h-[150px] w-[270px] md:h-[232px]  border-8 border-white rounded-[20px] absolute max-md:right-5 md:max-lg:left-30 lg:right-70 lg:-top-10">
+                <img src="assets/images/produk/kebuli ayam ori harga 12.000.jpg" alt="" class=" h-[150px]w-[270px] md:h-[232px]  border-8 border-white rounded-[20px] absolute max-md:left-16 max-md:top-12 max-lg:left-64 md:top-30  lg:right-32 lg:bottom-20 lg:top-5">
+                <img src="assets/images/produk/kebuli ayam geprek harga 12.000.jpg" alt="" class="h-[150px] w-[270px] md:h-[232px]  border-8 border-white rounded-[20px] absolute max-md:right-12 max-md:top-28 md:top-50 md:right-50  lg:right-80 lg:-bottom-10 lg:top-40">
+
+
+
+                
+                <div class="circle bg-primary w-[250px] h-[250px] md:w-[400px] md:h-[400px] absolute rounded-full md:right-35  -z-10 blur-[100px] top-0"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Tentang Section End -->
+
+        <!-- Footer -->
+    <footer class="footer mt-96 ">
+        <div class="footer-container bg-white shadow-md border border-gray-100 rounded-[10px] p-12 lg:p-8 w-full gap-y-10 flex flex-wrap justify-between">
+            <div class="foooter-col max-md:w-full md:max-w-72  ">
+                <div class="judul">
+                    <h3 class="max-md:text-center font-bold text-3xl text-secondary">Nasi Kebuli<span class="text-primary"> Ajb</span></h3>
+                </div>
+                <div class="deskripsi mt-2 text-secondary font-light max-md:text-center text-justify">
+                    <p>Jl. Tegal Sari, Dusun III, Dukuhwaluh, Kec. Kembaran, Kabupaten Banyumas, Jawa Tengah 53182</p>
+                </div>
+                <div class="sosial-media mt-12">
+                    <ul class="flex gap-x-3 max-md:justify-center ">
+                        <li class="bg-primary rounded-full w-13  h-13 flex justify-center items-center p-2"><a href="https://www.instagram.com/nasikebuliajb/"><i class="fa-brands fa-instagram text-3xl text-white"></i></a></li>
+                        <li class="bg-primary rounded-full w-13 h-13 flex justify-center items-center p-2"><a href="https://www.tiktok.com/@kebuliajb"><i class="fa-brands fa-tiktok text-3xl text-white"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foooter-col max-w-90 h-full flex flex-col pt-2 items-center max-md:order-3">
+                <div class="link-cepat border-t border-gray-200">
+                    <ul class="flex gap-x-4 text-lg  text-secondary pt-2">
+                        <li><a href="#beranda" class="hover:text-primary transition-all duration-500 ">Beranda</i></a></li>
+                        <li><a href="#tentang" class="hover:text-primary transition-all duration-500 ">Tentang</i></a></li>
+                        <li><a href="#produk" class="hover:text-primary transition-all duration-500 ">Produk</i></a></li>
+                        <li><a href="#testimoni" class="hover:text-primary transition-all duration-500 ">Testimoni</i></a></li>
+                    </ul>
+                </div>
+                <div class="tagline mt-8">
+                    <h6 class="font-bold text-2xl text-center text-secondary italic"> Dari Dapur ke Kampus<br>
+                        <span class="text-primary">Rasanya</span> ga Main Main !</h6>
+                </div>
+                <div class="copyright text-center mt-8 text-secondary">
+                    <p>&copy; 2025 Kebuli Ajb. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="foooter-col  w-full lg:w-auto pt-5 lg:pt-2 max-md:order-2 max-lg:border-t border-gray-200">
+                <div class="judul">
+                    <h3 class="text-secondary font-bold text-2xl">Google Maps</h3>
+                </div>
+              
+                <div class="map mt-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4397.572909878542!2d109.27115865010953!3d-7.41504994800072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655fcabb5fbda3%3A0x9146682eaeaef311!2sKEBULI%20AJB%20UMKM%20UMP!5e0!3m2!1sid!2sid!4v1748591256352!5m2!1sid!2sid" width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[10px]"></iframe>
+                </div>
+
+            </div>
         </div>
     </footer>
+    <!-- Footer End -->
 
-    <script src="./assets/js/main.js"></script>
+
     <script>
-    const navbarNav = document.getElementById("nav-menu");
 
-    function showNav() {
-        navbarNav.style.right = "0";
-    }
+        window.addEventListener('scroll', function() {
+            const scrollY = window.pageYOffset;
+            const navbar = document.getElementById('navbar');
 
-    function hideNav() {
-        navbarNav.style.right = "-75%";
-    }
+            if (scrollY > 5) {
+                navbar.classList.add('nav-scroll');
+            } else {
+                navbar.classList.remove('nav-scroll');
+            }
+        })
 
-    const navBar = document.getElementById('navbar-nav');
-    const hamburger = document.getElementById('hamburger');
-    document.addEventListener('click', function(e) {
-        if (!navBar.contains(e.target) && !hamburger.contains(e.target)) {
-            navbarNav.style.right = '-75%'
-        }
-    })
+        // Responsive Navbar
+        const navigation = document.getElementById('navigation');
+        const hamburger = document.querySelector('#hamburger');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('hamburger-active');
+            navigation.classList.toggle('nav-active');
+        });
+
+        navLinks.forEach(anchor => {
+            anchor.addEventListener('click', function() {
+                navigation.classList.remove('nav-active');
+                hamburger.classList.remove('hamburger-active');
+            });
+        });
+
     </script>
 </body>
 

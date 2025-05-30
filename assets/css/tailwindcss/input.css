@@ -2,6 +2,24 @@
 
 @theme {
   --color-primary: #c8921c;
-  --secondary: #111111;
+  --color-secondary: #333333;
   --font-fira: "Fira Sans", sans-serif;
+}
+
+.nav-scroll {
+  @apply transition-all duration-500 ease-in-out bg-gray-400/20  bg-clip-padding backdrop-filter backdrop-blur-2xl border-b border-gray-200  shadow-md;
+}
+
+.nav-active {
+  @apply top-30 z-20;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
 }

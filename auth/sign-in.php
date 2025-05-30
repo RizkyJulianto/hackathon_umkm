@@ -66,12 +66,19 @@ if (isset($_POST['signIn'])) {
         $data = mysqli_fetch_array($check);
         if (password_verify($password, $data['password'])) {
             $_SESSION['signIn'] = 1;
+            $_SESSION['id_users'] = $data['id_users'];
             $_SESSION['email'] = $data['email'];
-            $_SESSION['email'] = $data['email'];
-            $_SESSION['email'] = $data['email'];
-            $_SESSION['email'] = $data['email'];
-            $_SESSION['email'] = $data['email'];
+            $_SESSION['name'] = $data['name'];
+            $_SESSION['password'] = $data['password'];
+            $_SESSION['alamat'] = $data['alamat'];
+            header("Location: ../src/dashboard.php");
+        } else {
+            echo "<script>window.location.href = './sign-in.php'</script>
+            alert('Password anda salah')";
         }
+    } else {
+        echo "<script>window.location.href = './sign-in.php'</script>
+        alert('Email dan password anda salah')";
     }
 }
 

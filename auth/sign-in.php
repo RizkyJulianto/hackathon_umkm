@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/auth.css">
     <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/tailwindcss/">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
                         placeholder="Enter your password">
                     <span class="eye-icon"><i class="fas fa-eye-slash"></i></span>
                 </div>
-                <button class="btn-sign">Sign In</button>
+                <button name="signIn" class="btn-sign">Sign In</button>
             </form>
             <p class="account-link">Your haven't already account? <a href="./sign-up.php">Sign Up</a> now!</p>
         </div>
@@ -49,3 +50,30 @@
 </body>
 
 </html>
+
+
+
+<?php
+
+include "./connection/config.php";
+
+if (isset($_POST['signIn'])) {
+    $email = htmlspecialchars($_POST['email']);
+    $password = htmlspecialchars($_POST['password']);
+
+    $check = mysqli_query($connect, "SELECT * FROM users WHERE email = '$email'");
+    if (mysqli_num_rows($check) > 0) {
+        $data = mysqli_fetch_array($check);
+        if (password_verify($password, $data['password'])) {
+            $_SESSION['signIn'] = 1;
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['email'] = $data['email'];
+        }
+    }
+}
+
+
+?>
